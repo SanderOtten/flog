@@ -1,0 +1,11 @@
+#content {
+  background-color: $color3;
+  border: $border-width solid $color2;
+  border-radius: $border-radius;
+  width: $content-width;
+  height: $content-height;
+  padding: $content-padding;
+  margin: $content-margin $content-margin $content-margin 0;
+  float: right;
+  overflow: hidden;
+}

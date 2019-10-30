@@ -1,0 +1,16 @@
+button {
+  background-color: $color1;
+  border: 2px solid $color2;
+  color: darken($color2, 20%);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-user-select: none;
+  outline: none;
+
+  &:hover {
+    color: darken($color2, 25%);
+    background-color: lighten($color1, 2%);
+    border-color: darken($color2, 2%);
+  }
+}

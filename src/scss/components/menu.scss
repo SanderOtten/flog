@@ -1,0 +1,40 @@
+#menuContainer {
+  background-color: $color1;
+  border: $border-width solid $color2;
+  border-radius: $border-radius;
+  width: $menu-width;
+  height: $menu-height;
+  padding: $menu-padding;
+  margin: $menu-margin;
+  float: left;
+
+  ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-indent: 0;
+    text-decoration: none;
+
+    li {
+      padding: 0;
+      margin: 0;
+      text-indent: 0;
+      text-decoration: none;
+      list-style-type: none;
+
+      span {
+        color: $color4;
+
+        &:hover {
+          text-decoration: underline;
+          color: darken($color4, 10%);
+          cursor: pointer;
+        }
+
+        &.activeLang {
+          text-decoration: underline;
+          color: darken($color4, 10%);
+        }  
+      }
+    }
+  }
+}

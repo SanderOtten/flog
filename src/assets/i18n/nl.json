@@ -1,0 +1,33 @@
+{
+  "BUTTON": {
+    "ADD"           : "Voeg toe",
+    "CANCEL"        : "Annuleer",
+    "DELETE"        : "Verwijder",
+    "EDIT"          : "Wijzig",
+    "SAVE"          : "Bewaar",
+    "VIEW_POSTS"    : "Bekijk berichten",
+    "VIEW_PARENTS"  : "Bekijk ouders",
+    "VIEW_DETAILS"  : "Bekijk details",
+    "SHOW_ALL"      : "Bekijk alle kinderen",
+    "ADD_CHILD"     : "Voeg kind toe"
+  },
+
+  "MENU": {
+    "LOGOUT"   : "Uitloggen",
+    "PROFILE"  : "Profiel",
+    "CHILDREN" : "Kinderen",
+    "CHOOSE_LANGUAGE" : "Wijzig taal"
+  },
+
+  "PARENT" : {
+    "NAME"      : "Naam",
+    "EMAIL"     : "E-mail adres",
+    "BIRTHDATE" : "Geboortedatum"
+  },
+
+  "CHILD" : {
+    "NAME"      : "Naam",
+    "BIRTHDATE" : "Geboortedatum"
+  }
+
+}

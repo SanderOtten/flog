@@ -1,0 +1,35 @@
+<div *ngIf="parentDataService.loadingOne">
+  loading
+</div>
+<div *ngIf="!parentDataService.loadingOne">
+  <div *ngIf="!viewOneChild && !addChild">
+    <div *ngFor="let child of parentDataService.thisParent.children">
+      <app-child
+        [child]="child"
+        [buttons]="false"
+        [edit]="false"
+      >
+      </app-child>
+      <a (click)="showChildsDetails(child)">{{ 'BUTTON.VIEW_DETAILS' | translate }}</a>
+      &nbsp; &nbsp;
+      <a (click)="addNewChild()">{{ 'BUTTON.ADD_CHILD' | translate }}</a>
+    </div>
+  </div>
+  <div *ngIf="viewOneChild">
+    <app-child
+      [child]="this.child"
+      [buttons]="true"
+      [edit]="false"
+    >
+    </app-child>
+    <a (click)="showAllChildren()">{{ 'BUTTON.SHOW_ALL' | translate }}</a>
+  </div>
+  <div *ngIf="addChild">
+    <app-child
+      [child]="this.child"
+      [buttons]="false"
+      [edit]="true"
+    >
+    </app-child>
+  </div>
+</div>

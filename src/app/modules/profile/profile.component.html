@@ -1,0 +1,24 @@
+<div *ngIf="parentDataService.loadingOne">
+  loading
+</div>
+
+<div *ngIf="!parentDataService.loadingOne">
+
+  <table class="profile">
+    <tbody>
+      <tr>
+        <td>{{ 'PARENT.NAME' | translate }}: </td>
+        <td>{{ parentDataService.thisParent.name }}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PARENT.EMAIL' | translate }}: </td>
+        <td>{{ parentDataService.thisParent.email }}</td>
+      </tr>
+      <tr>
+        <td>{{ 'PARENT.BIRTHDATE' | translate }}: </td>
+        <td>{{ parentDataService.thisParent.dateOfBirth }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

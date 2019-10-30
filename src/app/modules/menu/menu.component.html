@@ -1,0 +1,25 @@
+<div id="menuContainer">
+  <ul>
+    <li title="{{ 'MENU.LOGOUT' | translate }}" (click)="logout()" [ngClass]="{'active' : activeLink=='logout'}" ><span>{{ 'MENU.LOGOUT' | translate }}</span></li>
+  </ul>
+  <ul>
+    <li title="{{ 'MENU.CHOOSE_LANGUAGE' | translate }}">
+      {{ 'MENU.CHOOSE_LANGUAGE' | translate }}
+      <br/>
+      <span [ngClass]="{'activeLang' : activeLang('en')}"
+            title="English"
+            (click)="changeLang('en')">
+        EN
+      </span>
+      <span [ngClass]="{'activeLang' : activeLang('nl')}"
+            title="Nederlands"
+            (click)="changeLang('nl')">
+        NL
+      </span>
+    </li>
+  </ul>
+  <ul>
+    <li title="{{ 'MENU.PROFILE' | translate }}"   (click)="navigateTo('profile')" [ngClass]="{'active' : activeLink=='profile'}" ><span>{{ 'MENU.PROFILE' | translate }}</span></li>
+    <li title="{{ 'MENU.CHILDREN'  | translate }}" (click)="navigateTo('children')"  [ngClass]="{'active' : activeLink=='children'}"  ><span>{{ 'MENU.CHILDREN'  | translate }}</span></li>
+  </ul>
+</div>

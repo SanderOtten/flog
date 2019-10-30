@@ -1,0 +1,26 @@
+<div class="post">
+   <table>
+     <tbody>
+        <tr>
+          <th>Title</th>
+          <td>{{ post.title }}</td>
+        </tr>
+        <tr>
+          <th>Author</th>
+          <td><a href="mailto:{{ post.author.email }}">{{ post.author.name }}</a></td>
+        </tr>
+        <tr>
+          <th>Created at</th>
+          <td>{{ post.createdAt }}</td>
+        </tr>
+        <tr>
+          <th>Last update</th>
+          <td>{{ post.updatedAt }}</td>
+        </tr>
+        <tr>
+          <th>text</th>
+          <td>{{ post.text }}</td>
+        </tr>
+     </tbody>
+  </table>
+</div>

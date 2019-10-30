@@ -1,0 +1,46 @@
+<table>
+  <tbody>
+    <tr>
+      <td>{{ 'CHILD.NAME' | translate }}:</td>
+      <td>
+        <span *ngIf="!edit">{{ child.name }}</span>
+        <input *ngIf="edit"
+               type="text"
+               [ngModel]="child.name"
+               placeholder="child's name"
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>{{ 'CHILD.BIRTHDATE' | translate }}:</td>
+      <td>
+        <span *ngIf="!edit">{{ child.dateOfBirth }}</span>
+        <input *ngIf="edit"
+               type="date"
+               [ngModel]="child.dateOfBirth"
+               placeholder="child's birthdate"
+        >
+      </td>
+    </tr>
+    <tr *ngIf="buttons">
+      <td colspan="2">
+        <a>{{ 'BUTTON.VIEW_POSTS' | translate }}</a>
+        &nbsp; &nbsp;
+        <a (click)="showChildsParents()">{{ 'BUTTON.VIEW_PARENTS' | translate }}</a>
+      </td>
+    </tr>
+    <tr *ngIf="edit">
+      <td colspan="2">
+        <a (click)="save()">{{ 'BUTTON.SAVE' | translate }}</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="showParents">
+  <app-parent
+    *ngFor="let parent of child.parents;let index=index"
+    [parent]="parent"
+    [index]="index"
+  >
+  </app-parent>
+</div>

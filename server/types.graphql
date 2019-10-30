@@ -1,0 +1,34 @@
+type Parent @model {
+  id: ID! @isUnique
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+  email: String! @isUnique
+  name: String!
+  password: String!
+  dateOfBirth: String!
+
+  children: [Child!]! @relation(name: "ParentsChildren")
+  posts: [Post!]! @relation(name: "ParentPosts")
+}
+
+type Child @model {
+  id: ID! @isUnique
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+  name: String!
+  dateOfBirth: String!
+
+  parents: [Parent!]! @relation(name: "ParentsChildren")
+  posts: [Post!]! @relation(name: "ChildPosts")
+}
+
+type Post @model {
+  id: ID! @isUnique
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+  title: String
+  text: String!
+
+  author: Parent! @relation(name: "ParentPosts")
+  about: Child! @relation(name: "ChildPosts")
+}

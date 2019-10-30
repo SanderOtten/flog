@@ -1,0 +1,33 @@
+{
+  "BUTTON": {
+    "ADD"           : "Add",
+    "CANCEL"        : "Cancel",
+    "DELETE"        : "Delete",
+    "EDIT"          : "Edit",
+    "SAVE"          : "Save",
+    "VIEW_POSTS"    : "View posts",
+    "VIEW_PARENTS"  : "View parents",
+    "VIEW_DETAILS"  : "View details",
+    "SHOW_ALL"      : "View all children",
+    "ADD_CHILD"     : "Add child"
+  },
+
+  "MENU": {
+    "LOGOUT"   : "Sign off",
+    "PROFILE"  : "Profile",
+    "CHILDREN" : "Children",
+    "CHOOSE_LANGUAGE" : "Change language"
+  },
+
+  "PARENT" : {
+    "NAME"      : "Name",
+    "EMAIL"     : "E-mail address",
+    "BIRTHDATE" : "Date of Birth"
+  },
+
+  "CHILD" : {
+    "NAME"      : "Name",
+    "BIRTHDATE" : "Date of Birth"
+  }
+
+}

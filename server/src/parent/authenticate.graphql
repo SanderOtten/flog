@@ -1,0 +1,9 @@
+type AuthenticateParentPayload {
+  id: ID!
+  name: String!
+  token: String!
+}
+
+extend type Mutation {
+  authenticateParent(email: String!, password: String!): AuthenticateParentPayload
+}

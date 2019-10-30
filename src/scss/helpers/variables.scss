@@ -1,0 +1,33 @@
+$app-width: 100vw;
+$app-height: 100vh;
+
+$border-width: 3px;
+$border-radius: 10px;
+
+$login-width: $app-width/2;
+$login-padding: 30px;
+$login-margin: 50px;
+
+$footer-margin: 10px;
+$footer-padding: 10px;
+$footer-width: calc( #{$app-width} - ( ( #{$border-width} + #{$footer-margin} + #{$footer-padding} )*2 ) );
+$footer-height: 20px;
+
+$footer-total-height: calc( #{$footer-height} + #{$border-width}*2 + #{$footer-margin} + #{$footer-padding}*2 );
+
+$menu-width: 10vw;
+$menu-padding: 10px;
+$menu-margin: 10px;
+$menu-height: calc( #{$app-height} - ( #{$footer-total-height} + #{$menu-margin}*2 + #{$border-width}*2 + #{$menu-padding}*2 ) );
+
+$content-padding: 10px;
+$content-margin: 10px;
+
+$content-width: calc( #{$app-width } - #{$menu-width} - #{$content-margin} - (( #{$border-width} + #{$content-padding}  + #{$menu-margin} + #{$border-width} + #{$menu-padding} )*2) );
+$content-height: calc( #{$app-height} - ( #{$footer-total-height } + #{$content-margin}*2 + #{$border-width}*2 + #{$content-padding}*2 ) );
+
+$color1: #BEC987;
+$color2: #869638;
+$color3: #FDF4C4;
+$color4: #607CFD;
+$color5: #ABBBCF;

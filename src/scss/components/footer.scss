@@ -1,0 +1,13 @@
+#footer {
+  background-color: $color4;
+  border: $border-width solid $color2;
+  border-radius: $border-radius;
+  width: $footer-width;
+  height: $footer-height;
+  padding: $footer-padding;
+  margin: 0 $footer-margin $footer-margin $footer-margin;
+  overflow: hidden;
+  float: none;
+  clear: both;
+  color: $color5;
+}
